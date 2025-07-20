@@ -1,5 +1,6 @@
 package foroHub.foroHub.controller;
 
+import foroHub.foroHub.topico.DatosActualizarTopico;
 import foroHub.foroHub.topico.DatosRegistroTopico;
 import foroHub.foroHub.topico.Topico;
 import foroHub.foroHub.topico.TopicoRepository;
@@ -34,10 +35,11 @@ public class TopicoController {
     }
 
     @Transactional
-    @PostMapping
-    public void actualizar(@RequestBody @Valid DatosRegistroTopico datos) {
+    @PutMapping
+    public void actualizar(@RequestBody @Valid DatosActualizarTopico datos) {
+        var topico = repository.getReferenceById(datos.id());
+        topico.actualizaInformacion(datos);
 
-        repository.save(new Topico(datos));
 
     }
 

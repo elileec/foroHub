@@ -9,4 +9,6 @@ public record DatosRegistroTopico(
         @NotBlank String status,
         @NotBlank String autor,
         @NotBlank String curso)
-{}
+{
+
+}

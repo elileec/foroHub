@@ -1,6 +1,7 @@
 package foroHub.foroHub.topico;
 
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -32,5 +33,33 @@ public class Topico {
         this.status = datos.status();
         this.autor = datos.autor();
         this.curso = datos.curso();
+    }
+
+    public void actualizaInformacion(@Valid DatosActualizarTopico datos)
+    {
+        if(datos.titulo()!= null){
+            this.titulo = datos.titulo();
+        }
+
+        if(datos.mensaje()!= null){
+            this.mensaje = datos.mensaje();
+        }
+
+        if(datos.fechaCreacion()!= null){
+            this.fechaCreacion = datos.fechaCreacion();
+        }
+
+        if(datos.status()!= null){
+            this.status = datos.status();
+        }
+
+        if(datos.autor() != null){
+            this.autor = datos.autor();
+        }
+
+        if(datos.curso() != null) {
+            this.curso = datos.curso();
+        }
+
     }
 }
