@@ -6,6 +6,7 @@ import foroHub.foroHub.topico.TopicoRepository;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,4 +32,15 @@ public class TopicoController {
     public List<Topico> listar(){
         return repository.findAll();
     }
+
+    @Transactional
+    @PostMapping
+    public void actualizar(@RequestBody @Valid DatosRegistroTopico datos) {
+
+        repository.save(new Topico(datos));
+
+    }
+
+
+
 }
