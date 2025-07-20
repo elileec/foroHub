@@ -43,7 +43,7 @@ public class TopicoController {
 
 
     }
-
+    //metodo que elimina topico de la tabla topicos
     @Transactional
     @DeleteMapping("/{id}")
 
