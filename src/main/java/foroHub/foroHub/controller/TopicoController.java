@@ -5,6 +5,7 @@ import foroHub.foroHub.topico.Topico;
 import foroHub.foroHub.topico.TopicoRepository;
 import jakarta.servlet.ServletOutputStream;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +18,10 @@ public class TopicoController {
     @Autowired
     private TopicoRepository repository;
 
+    @Transactional
     @PostMapping
     public void registrar(@RequestBody DatosRegistroTopico datos) {
+
         repository.save(new Topico(datos));
 
     }
