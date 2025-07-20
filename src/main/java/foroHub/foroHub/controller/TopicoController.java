@@ -34,6 +34,7 @@ public class TopicoController {
         return repository.findAll();
     }
 
+    //metodo actualizacion de datos en tabla topicos
     @Transactional
     @PutMapping
     public void actualizar(@RequestBody @Valid DatosActualizarTopico datos) {
