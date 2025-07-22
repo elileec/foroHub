@@ -11,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -29,10 +30,18 @@ public class TopicoController {
 
     }
 
+
+
+    //metodo para listar todos los topicos
     @GetMapping
     public List<Topico> listar(){
         return repository.findAll();
     }
+
+    //metodo para listar un topico
+
+
+
 
     //metodo actualizacion de datos en tabla topicos
     @Transactional
