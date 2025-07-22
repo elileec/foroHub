@@ -18,4 +18,7 @@ Challenger: Desarrollar una API REST con la temática de un foro
 * Librerías y herramientas: Lombok,spring web,spring boot Devtools,flyway migration, mysql driver, validation, spring security ,jackson, Maven, Git
 ## Autor
 Proyecto creado por Luis Echeverri - Programa de formación de Alura Latam
-Estructura del proyecto
+## Base de datos
+
+
+## Estructura del proyecto
