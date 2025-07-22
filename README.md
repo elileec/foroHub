@@ -17,4 +17,5 @@ Challenger: Desarrollar una API REST con la temática de un foro
 * Mysql
 * Librerías y herramientas: Jackson, Maven, Git
 ## Autor
+Proyecto creado por Luis Echeverri - Programa de formación de Alura Latam
 Estructura del proyecto
