@@ -1,13 +1,11 @@
 package foroHub.foroHub.controller;
 
-import foroHub.foroHub.topico.DatosActualizarTopico;
-import foroHub.foroHub.topico.DatosRegistroTopico;
-import foroHub.foroHub.topico.Topico;
-import foroHub.foroHub.topico.TopicoRepository;
+import foroHub.foroHub.topico.*;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,8 +36,13 @@ public class TopicoController {
         return repository.findAll();
     }
 
-    //metodo para listar un topico
+    //metodo para mostrar un topico
 
+    @GetMapping("/{id}")
+    public ResponseEntity mostrarTopico(@PathVariable Long id){
+        var detalletopico = repository.getReferenceById(id);
+        return ResponseEntity.ok(new DatosDetalleTopico(detalletopico));
+    }
 
 
 
