@@ -11,4 +11,5 @@ public class ForoHubApplication {
 	}
 
 }
+https://app.aluracursos.com/course/spring-boot-3-aplique-mejores-practicas-proteja-api-rest/task/91593 VOY EN ESTE VIDEO
 

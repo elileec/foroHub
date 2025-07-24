@@ -1,5 +1,6 @@
 package foroHub.foroHub.controller;
 
+import foroHub.foroHub.infra.security.DatoSTokenJWT;
 import foroHub.foroHub.infra.security.TokenService;
 import foroHub.foroHub.usuario.DatosAutenficacion;
 import foroHub.foroHub.usuario.Usuario;
@@ -25,9 +26,12 @@ public class AutenticacionController {
 
     @PostMapping
     public ResponseEntity iniciarSesion(@RequestBody @Valid DatosAutenficacion datos){
-        var  token = new UsernamePasswordAuthenticationToken(datos.login(), datos.contrasena());
-        var autenticacion = manager.authenticate(token);
 
-        return ResponseEntity.ok(tokenService.generarToken((Usuario) autenticacion.getPrincipal()));
+        var  authenticationToken = new UsernamePasswordAuthenticationToken(datos.login(), datos.contrasena()); //springsecurity sabe los datos del usuario que ingresa
+        var autenticacion = manager.authenticate(authenticationToken);
+
+        var tokenJWT = tokenService.generarToken((Usuario) autenticacion.getPrincipal());
+
+        return ResponseEntity.ok(new DatoSTokenJWT(tokenJWT));
     }
 }
