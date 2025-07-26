@@ -16,6 +16,7 @@ Challenger: Desarrollar una API REST con la temática de un foro
 * JPA/Hibernate
 * Mysql
 * Librerías y herramientas: Lombok,spring web,spring boot Devtools,flyway migration, mysql driver, validation, spring security ,jackson, Maven, Git
+* Insomnia
 ## Carpetas del proyecto
 ![Carpetas forohub](https://github.com/elileec/foroHub/blob/master/Carpetas%20forohub.PNG)
 
