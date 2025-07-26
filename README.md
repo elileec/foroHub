@@ -1,4 +1,4 @@
-# FORO HUB - PROYECTO
+# FORO HUB - Challenges ONE
 Challenger: Desarrollar una API REST con la temática de un foro. Almacenar la información en una base de datos a través de la tabla tópicos.
 ## Funcionalidades: 
   * Crear un nuevo tópico
