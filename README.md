@@ -1,4 +1,4 @@
-# FORO HUB
+# FORO HUB - PROYECTO
 Challenger: Desarrollar una API REST con la temática de un foro
 ## Funcionalidades: 
   * Crear un nuevo tópico
