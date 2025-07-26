@@ -19,10 +19,10 @@ Challenger: Desarrollar una API REST con la temática de un foro
 * Librerías y herramientas: Lombok,spring web,spring boot Devtools,flyway migration, mysql driver, validation, spring security ,jackson, Maven, Git
 ## Carpetas del proyecto
 ![Carpetas forohub](https://github.com/elileec/foroHub/blob/master/Carpetas%20forohub.PNG)
-## Autor
-Proyecto creado por Luis Echeverri - Programa de formación de Alura Latam
+
 ## Base de datos
 ![basededatos forohub](https://github.com/elileec/foroHub/blob/master/tablatopicos-forohub.PNG)
 ![basededatos forohub](https://github.com/elileec/foroHub/blob/master/tablausuarios-forohub.PNG)
 
-## Estructura del proyecto
+## Autor
+Proyecto creado por Luis Echeverri - Programa de formación de Alura Latam
