@@ -1,5 +1,5 @@
 # FORO HUB - PROYECTO
-Challenger: Desarrollar una API REST con la temática de un foro. Almacenar la información en una base de datos a través de la tabla tópic-os.
+Challenger: Desarrollar una API REST con la temática de un foro. Almacenar la información en una base de datos a través de la tabla tópic_os.
 ## Funcionalidades: 
   * Crear un nuevo tópico
 
