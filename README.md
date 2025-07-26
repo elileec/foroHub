@@ -25,7 +25,6 @@ Challenger: Desarrollar una API REST con la temática de un foro
 ![basededatos forohub](https://github.com/elileec/foroHub/blob/master/tablatopicos-forohub.PNG)
 ![basededatos forohub](https://github.com/elileec/foroHub/blob/master/tablausuarios-forohub.PNG)
 ## API Utilizando Insomnia
-
-
+![API - INSOMNIA forohub](https://github.com/elileec/foroHub/blob/master/API-INSOMNIA.PNG)
 ## Autor
 Proyecto creado por Luis Echeverri - Programa de formación de Alura Latam
