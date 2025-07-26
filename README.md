@@ -12,7 +12,7 @@ Challenger: Desarrollar una API REST con la temática de un foro
   * Eliminar un tópico
 ## Tecnologías utilizadas
 * Java 17+
-* Insomni
+* Insom
 * Spring Boot 3
 * JPA/Hibernate
 * Mysql
